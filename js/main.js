@@ -84,6 +84,9 @@ function darkMode() {
 
    const countryInfo = document.querySelector('.country_info');
    countryInfo.classList.toggle("country_info_darkMode");
+   
+   const noBoxFoundMsg = document.querySelector('.noBoxFoundMsg');
+   noBoxFoundMsg.classList.toggle("noBoxFoundMsg_darkMode");
 }
 
 
