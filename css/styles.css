@@ -24,7 +24,6 @@ header {
 .app_content {
    min-height: 100vh;
    background-color: #f9f9f9;
-   position: relative;
 }
 .logo_text {
    font-weight: var(--ft-w600);
@@ -226,8 +225,4 @@ header {
 }
 .country_info_darkMode {
    color: white;
-}
-.country_info_all {
-   position: absolute;
-   top: 100px;
 }
