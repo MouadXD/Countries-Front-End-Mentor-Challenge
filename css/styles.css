@@ -1,0 +1,235 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+}
+:root {
+   --main-font: 'Nunito Sans', sans-serif;
+   --ft-w300: 300;
+   --ft-w600: 600;
+   --ft-w800: 800;
+}
+body {
+   font-family: var(--main-font);
+}
+header {
+   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.app_content {
+   min-height: calc(100vh - 72px);
+   background-color: #f9f9f9;
+   position: relative;
+}
+.logo_text {
+   font-weight: var(--ft-w600);
+}
+.dark_mode_txt {
+   font-size: 14px;
+}
+.theme_changer:hover {
+   cursor: pointer;
+}
+.search_input {
+   outline: none;
+}
+.search_field {
+   border-radius: 3px;
+   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.search_field input {
+   width: 250px;
+   background-color: transparent;
+}
+.search_field input::placeholder {
+   font-size: 14px;
+   font-weight: var(--ft-w300);
+}
+.search_field i {
+   font-size: 14px;
+   color: grey;
+}
+@media (max-width: 750px) {
+   .search_field input {
+      width: 100%;
+   }
+}
+.countries_boxes {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 30px;
+}
+.box {
+   border-radius: 5px;
+   overflow: hidden;
+   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+   cursor: pointer;
+   background-color: white;
+}
+.box_darkMode {
+   background-color: #2b3742;
+   color: white;
+}
+.box img {
+   width: 100%;
+   height: 196px;
+}
+.country_name {
+   font-weight: var(--ft-w800);
+   font-size: 18px;
+}
+.box p {
+   padding-left: 16px;
+   margin-bottom: 0;
+   font-weight: var(--ft-w600);
+}
+.box p span {
+   font-weight: var(--ft-w300);
+}
+.header_darkMode {
+   background-color: #2b3742;
+}
+.header_darkMode .logo a {
+   color: white !important;
+}
+.header_darkMode .dark_mode_txt {
+   color: white;
+}
+.header_darkMode i {
+   color: white;
+}
+.appContent_darkMode {
+   background-color: #202c36;
+}
+.search_filter .search_field {
+   background-color: white;
+}
+.searchFilter_darkMode .search_field {
+   background-color: #2b3742;
+}
+.searchFilter_darkMode .search_field i {
+   color: white;
+}
+.searchFilter_darkMode .search_field input {
+   color: white;
+}
+.searchFilter_darkMode .search_field input::placeholder {
+   color: white;
+}
+.noBoxFoundMsg {
+   display: none;
+}
+.dropdown {
+   background-color: white;
+   position: relative;
+}
+.dropdown_darkMode {
+   background-color: #2b3742;
+   color: white;
+}
+.dropdown .dropdown_select {
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+   font-weight: var(--ft-w600);
+   font-size: 14px;
+
+}
+.dropdown .dropdown_select span {
+   padding-right: 5px;
+}
+.dropdown_items {
+   position: absolute;
+   background-color: white;
+   width: 100%;
+   margin-top: 5px;
+   border-radius: 5px;
+   display: none;
+}
+.dropdown_items_darkMode {
+   background-color: #2b3742;
+}
+.dropdown_items_open {
+   display: block;
+}
+.dropdown_items ul {
+   padding-left: 0;
+   padding-top: 10px;
+}
+.dropdown_items ul li {
+   cursor: pointer;
+   padding: 2px 20px;
+   transition: .3s;
+}
+.dropdown_items ul li:hover {
+   transform: translateX(5px);
+   transition: .3s;
+}
+.dropdown_select i {
+   transition: .3s;
+}
+.dropdown_select .rotate {
+   transform: rotate(180deg);
+   transition: .3s;
+}
+.searh_filter_boxes {
+   display: block;
+}
+.searh_filter_boxes_hide {
+   display: none;
+}
+.country_more_info {
+   display: none;
+}
+.country_more_info_open {
+   display: block;
+}
+.back_btn {
+   padding: 5px 35px;
+   background-color: white;
+   border: none;
+   border-radius: 5px;
+   font-weight: var(--ft-w600);
+   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.countryInfoPage img {
+   width: 500px;
+}
+.country_info p {
+   font-weight: var(--ft-w600);
+}
+.country_info p span {
+   font-weight: var(--ft-w300);
+}
+.countryName {
+   font-weight: var(--ft-w800);
+   margin-bottom: 50px;
+}
+@media (max-width: 580px) {
+   .countryInfoPage img {
+      width: 400px;
+   }
+}
+@media (max-width: 460px) {
+   .countryInfoPage img {
+      width: 300px;
+   }
+}
+.back_btn_darkMode {
+   background-color: #2b3742;
+   color: white;
+}
+.country_info_darkMode {
+   color: white;
+}
+.country_info_all {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}

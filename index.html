@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/all.min.css">
+   <title>Countries</title>
+</head>
+<body>
+   <div id="app">
+      <!-- Start Header -->
+      <header class="py-4">
+         <div class="container">
+            <nav class="d-flex align-content-center justify-content-between">
+               <div class="logo">
+                  <a class="logo_text text-dark text-" href="#">Where in the world?</a>
+               </div>
+               <div class="theme_changer">
+                  <i class="fa-regular fa-moon"></i>
+                  <span class="dark_mode_txt">Dark Mode</span>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!-- End Header -->
+      <!-- Start App Content -->
+      <div class="app_content py-4">
+         <div class="container">
+            <!-- Start Country More Info -->
+            <div class="country_more_info">
+               <button class="back_btn">Back</button>
+               <div class="country_info_all">
+                  <div class="countryInfoPage d-flex align-items-center justify-content-between mt-5 flex-md-row flex-column" style="gap: 100px;">
+                     <img class="countryMoreInfoImg" src="" alt="">
+                     <div class="country_info w-100">
+                        <h2 class="countryName"></h2>
+                        <div class="country_more d-flex flex-md-row flex-column" style="gap: 30px;">
+                           <div class="country_more_1">
+                              <p>Native Name: <span class="nativeName"></span></p>
+                              <p>Population: <span class="population"></span></p>
+                              <p>Region: <span class="region"></span></p>
+                              <p>Sub Region: <span class="subRegion"></span></p>
+                              <p>Capital: <span class="capital"></span></p>
+                           </div>
+                           <div class="country_more_2">
+                              <p>Top Level Domain: <span class="topLvlDomaine"></span></p>
+                              <p>Currencies: <span class="currencies"></span></p>
+                              <p>Languages: <span class="languages"></span></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- End Country More Info -->
+            <div class="searh_filter_boxes">
+               <!-- Start SEarch&Filter -->
+               <div class="search_filter mb-3 d-flex align-items-md-center justify-content-md-between flex-column flex-md-row">
+                  <div class="search_field mb-2 px-2 py-2 d-flex align-items-center">
+                     <i class="fa-solid fa-magnifying-glass p-1"></i>
+                     <input class="search_input border-0 px-2" type="text" placeholder="Search for country...">
+                  </div>
+                  <div class="region_filter">
+                     <div class="dropdown">
+                        <div class="dropdown_select">
+                           <span>Filter by Region</span>
+                           <i class="fa-solid fa-caret-down rotate"></i>
+                        </div>
+                        <div class="dropdown_items">
+                           <ul>
+                              <li>Africa</li>
+                              <li>Americas</li>
+                              <li>Asia</li>
+                              <li>Europe</li>
+                              <li>Oceania</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--End SEarch&Filter -->
+               <!--Start Countries Box -->
+               <div class="countries_boxes">
+                  <h4 class="noBoxFoundMsg">No Country Found</h4>
+               </div>
+               <!--End Countries Box -->
+            </div>
+         </div>
+      </div>
+      <!-- End App Content -->
+   </div>
+   <script src="js/main.js" type="module"></script>
+</body>
+</html>
